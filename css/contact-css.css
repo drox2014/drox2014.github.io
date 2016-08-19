@@ -59,7 +59,7 @@ textarea {
 h2{
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 15px;
     color: #2c3e50;
 }
@@ -70,82 +70,113 @@ h2:after{
     width: 50px;
     background-color: #34495e;
     display: block;
-    margin: 0 auto;
     margin-top: 5px;
 }
 
 h3{
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    padding-bottom: 15px;
-    color: #2c3e50;
+    font-size: 20px;
+    padding-bottom: 0px;
+    color: white;
+    text-align: center;
+    margin: 5px;
 }
-
 
 section{
     margin: 0;
     padding: 0;
 }
 
-header{
-    min-height: 100px;
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #34495e;
+    text-align: justify;
 }
 
-.nav{
-    margin: 0 auto;
-    padding-top: 50px;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+section#about-us{
+    margin-top: 100px;
 }
 
-.nav-pills > li > a{
-    color: white;
-    
+section#stay-with-us{
+    height: 250px;
 }
 
-.nav-pills > li > a:hover,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a{
-    background-color: #0e85d5;  
+.contact-person{
+    width: 99%;
 }
 
-.nav-pills > li > a:focus{
-    background-color: transparent;      
+.list-group{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
 }
 
-.nav-icon{
-    margin-right: 10px;
-}
-
-.navbar{
-    background-image: url('../img/navbar.png');
-    background-attachment: fixed;
-    min-height: 100px;
-    box-shadow: none;
-    border: none;
-}
-
-.navbar-brand > img {
-    height: 100px;
-    margin-top: -14px;
-}
-
-.navbar-collapse.collapse {
-    border: none;
-
-}
-
-.profile-photo{
-    width: 100%;
+.list-group-item > img{
+    width: 80%;
     height: auto;
     border-radius: 50%;
 }
 
-section.contact-details{
-    min-height: 400px;
+.item-header{
+    background-color: currentColor;
 }
+
+.social-roll {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.social-roll:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+.facebook-roll{
+    background-image: url('../img/facebook-gray.png');
+}
+
+.facebook-roll:hover{
+    background-image: url('../img/facebook-color.png');
+}
+
+.twitter-roll{
+    background-image: url('../img/twitter-gray.png');
+}
+
+.twitter-roll:hover{
+    background-image: url('../img/twitter-color.png');
+}
+
+.googleplus-roll{
+    background-image: url('../img/googleplus-gray.png');
+}
+
+.googleplus-roll:hover{
+    background-image: url('../img/googleplus-color.png');
+}
+
+.linkedin-roll{
+    background-image: url('../img/linkedin-gray.png');
+}
+
+.linkedin-roll:hover{
+    background-image: url('../img/linkedin-color.png');
+}
+
 
 
 /* ==========================================================================
@@ -160,10 +191,86 @@ section.contact-details{
 }
 
 @media (max-width: 991px) {
+    .social-roll {
+        background-size: 40px;
+        height: 40px;
+        width: 40px;
+    }
 
+    footer {
+        height: 235px;
+    }
 }
     
 @media (max-width: 767px) {
+    h2{
+        font-size: 30px;
+    }
+
+    .social-roll {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: 380px;
+    }
+
+}
+
+@media (max-width: 479px) {
+    h2 {
+        font-size: 15px;
+        padding-bottom: 0px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        padding-bottom: 0px;
+        color: #2c3e50;
+        text-align: center;
+        margin: 0;
+    }
+
+    section#about-us {
+        margin-top: 50px;
+    }
+
+    footer {
+        height: 370px;
+    }
+
+    .list-group {
+        margin: 5px auto;
+        width: 90%;
+        text-align: center;
+        display: list-item;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    h2{
+        font-size: 20px;
+    }
+
+    h2:after {
+        height: 3px;
+        width: 35px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 400px;
+    }
 
 }
 
